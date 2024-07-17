@@ -1,0 +1,5 @@
+a,b=input().split()
+a=int(a)
+b=int(b)
+c=(a+b)/(a-b)
+print(f"{c:.2f}")
