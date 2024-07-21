@@ -1,8 +1,8 @@
 def leapyear(a):
     if a%4==0:
-        if a%400:
+        if a%400==0:
             return True
-        elif a%100:
+        elif a%100==0:
             return False
         else:
             return True
