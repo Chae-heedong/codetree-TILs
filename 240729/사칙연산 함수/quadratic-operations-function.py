@@ -6,6 +6,6 @@ elif a[1]=="+":
 elif a[1]=="-":
     print(f"{a[0]} - {a[2]} = {int(a[0])-int(a[2])}")
 elif a[1]=="/":
-    print(f"{a[0]} / {a[2]} = {int(a[0])/int(a[2]):.0f}")
+    print(f"{a[0]} / {a[2]} = {math.floor(int(a[0])/int(a[2]))}")
 else:
     print("False")
