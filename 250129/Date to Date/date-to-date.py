@@ -12,4 +12,7 @@ if m1+1<m2:
 #마지막달은 걍 d2더히면됨
 total=total+d2
 
+#-고려
+if m1>m2 or (m1==m2 and d1>d2):
+    total=total-365
 print(total)
