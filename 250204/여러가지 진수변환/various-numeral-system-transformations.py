@@ -2,7 +2,7 @@ N, B = map(int, input().split())
 arr=[]
 
 while True:
-    if N<2:
+    if N<B:
         arr.append(N)
         break
     arr.append(N%B)
