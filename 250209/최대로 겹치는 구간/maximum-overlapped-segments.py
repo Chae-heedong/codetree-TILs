@@ -12,5 +12,7 @@ for i in range(0,n):
         lists[j]=lists[j]+1
 
 lists.sort()
-
-print(lists[-1])
+if lists[-1]==1:
+    print(0) #겹치는거 없을때
+else:
+    print(lists[-1])
