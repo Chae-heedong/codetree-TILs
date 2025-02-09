@@ -7,12 +7,9 @@ for i in range(200):
 
 for i in range(0,n):
     a=segments[i][0]+100
-    b=segments[i][1]+100
+    b=segments[i][1]+99
     for j in range(a-1,b):
         lists[j]=lists[j]+1
-
 lists.sort()
-if lists[-1]==1:
-    print(0) #겹치는거 없을때
-else:
-    print(lists[-1])
+
+print(lists[-1])
