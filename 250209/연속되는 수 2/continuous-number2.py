@@ -16,8 +16,8 @@ for i in arr:
     prenum=i
 
 if maxcnt==1:
-    maxcnt==0 #연속 없을때 
-    
+    maxcnt=0 #연속 없을때 
+
 print(maxcnt)
 
 # Write your code here!
