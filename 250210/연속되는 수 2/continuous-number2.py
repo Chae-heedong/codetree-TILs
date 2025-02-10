@@ -1,7 +1,7 @@
 n = int(input())
 arr = [int(input()) for _ in range(n)]
 arr.sort()
-cnt=0
+cnt=1
 biggestcnt=0
 prenum=""
 for i in arr:
@@ -12,5 +12,8 @@ for i in arr:
     else:
         cnt=1 #리셋
     prenum=i
+
+if arr[0]==arr[-1]:
+    biggestcnt=biggestcnt+1 #다 같은수면 1개 덜셈 
 
 print(biggestcnt)
