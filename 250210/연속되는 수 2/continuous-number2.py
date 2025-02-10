@@ -14,5 +14,6 @@ for i in arr:
 
 if arr[0]==arr[-1]:
     biggestcnt=biggestcnt+1 #다 같은수면 1개 덜셈 
-
+if n==1:
+    biggestcnt=1 #1개면 예외처리
 print(biggestcnt)
