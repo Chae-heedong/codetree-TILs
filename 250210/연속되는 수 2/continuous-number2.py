@@ -1,6 +1,5 @@
 n = int(input())
 arr = [int(input()) for _ in range(n)]
-arr.sort()
 cnt=1
 biggestcnt=0
 prenum=""
