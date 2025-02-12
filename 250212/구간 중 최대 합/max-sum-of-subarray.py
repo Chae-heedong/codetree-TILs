@@ -1,9 +1,14 @@
 n, k = map(int, input().split())
 arr = list(map(int, input().split()))
 numlist=[]
+num=0
+for i in range(k-1,n):
+    for j in range(0,k):
+        num=num+arr[i-j]
 
-for i in range(2,n):
-    numlist.append(arr[i-2]+arr[i-1]+arr[i])
+
+    numlist.append(num)
+    num=0
 
 numlist.sort()
 print(numlist[-1])
