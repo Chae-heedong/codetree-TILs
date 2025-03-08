@@ -16,11 +16,12 @@ for i in range (1,x2[-1]-k+1):
     for j in range(i,i+k+1):
         if j in x:
             p=x.index(j)
+
             if c[p]=='H':
                 score=score+2
             else:
                 score=score+1
     scores.append(score)
 
-scores.sort()
-print(scores[-1])
+scores.sort(reverse=True)
+print(scores[0])
