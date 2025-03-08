@@ -8,17 +8,19 @@ for _ in range(n):
 
 x2=x[::]
 x2.sort()
-score=0
 scores=[]
-for i in range (0,x2[-1]-k+1):
-    for j in range(i,i+k):
-        for p in range(0,k):
-            if x[p]==j:
-                if c[p]=='H':
-                    score=score+2
-                else:
-                    score=score+1
-    scores.append(score)
+
+for i in range (1,x2[-1]-k+1):
     score=0
+    #0부터 끝-k 까지
+    for j in range(i,i+k+1):
+        if j in x:
+            p=x.index(j)
+            if c[p]=='H':
+                score=score+2
+            else:
+                score=score+1
+    scores.append(score)
+
 scores.sort()
-print(scores[-1]+1)
+print(scores[-1])
