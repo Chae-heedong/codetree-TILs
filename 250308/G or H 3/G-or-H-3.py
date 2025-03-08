@@ -10,7 +10,7 @@ x2=x[::]
 x2.sort()
 scores=[]
 
-for i in range (1,x2[-1]-k+1):
+for i in range (1,10000-k):
     score=0
     #0부터 끝-k 까지
     for j in range(i,i+k+1):
