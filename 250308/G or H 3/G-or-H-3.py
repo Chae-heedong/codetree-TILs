@@ -7,10 +7,10 @@ for _ in range(n):
     c.append(char)
 
 x2=x[::]
-x2.sort()
+x2.sort(reverse=True)
 scores=[]
 
-for i in range (1,10000-k):
+for i in range (1,x2[0]+1):
     score=0
     #0부터 끝-k 까지
     for j in range(i,i+k+1):
